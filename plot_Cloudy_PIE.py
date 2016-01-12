@@ -2,17 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-f1 = open('../cloudy_coolingcurve_nm3_HM05_zone3.txt', 'r')
+f1 = open('cloudy_coolingcurve_nm3_HM05.txt', 'r')
 f1.readline()
 lines1 = f1.readlines()
 f1.close()
 
-f2 = open('../cloudy_coolingcurve_n0_HM05_zone3.txt', 'r')
+f2 = open('cloudy_coolingcurve_n0_HM05.txt', 'r')
 f2.readline()
 lines2 = f2.readlines()
 f2.close()
 
-f3 = open('../cloudy_coolingcurve_n3_HM05_zone3.txt', 'r')
+f3 = open('cloudy_coolingcurve_n3_HM05.txt', 'r')
 f3.readline()
 lines3 = f3.readlines()
 f3.close()
@@ -68,4 +68,4 @@ plt.text(1.2, -18, 'solar, log(n_h) = -3', color='blue')
 plt.text(1.2, -19, 'solar, log(n_h) = 0', color='green')
 plt.text(1.2, -20, 'solar, log(n_h) = 3', color='purple')
 plt.show()
-fig.savefig("coolingcurve_H&M_PIE.png")
+fig.savefig("coolingcurve_HM05_PIE.png")
